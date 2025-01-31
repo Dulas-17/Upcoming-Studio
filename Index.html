@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming studios</title>
+<link rel="stylesheet" type="text/css" href="Jojo.css">
+</head>
+<body>
+   <div class="loader"></div>
+    <header>
+        <h1>Upcoming Studio</h1>
+        <p>Beta Version </p>
+    </header>
+
+
+    <nav>
+     <a href="#Updates" onclick="showSection('updates')">Updates</a>
+        <a href="#music" onclick="showSection('music')">Music</a>
+        <a href="#videos" onclick="showSection('videos')">Videos</a>
+  <a href="#profiles" onclick="showSection('profiles')">Profiles</a>
+<a href="#about" onclick="showSection('about')">About</a>        
+    </nav>
+
+
+
+<!---Updates Section--->
+<main id="updates" class="section active">
+     <h2>Updates</h2>
+            <div id="threads-container">
+
+
+
+              <!-- Thread 1 -->
+              <div class="thread">
+            <div class="thread-header">
+                <p><strong></strong></p>
+                <p class="timestamp">Posted on: 2025-02-01</p>
+            </div>
+            <div class="thread-body">
+                <p>Welcome to the Upcoming studio's Beta version program. Note this program is available for Limited until the full page  is Available, the full page will be available late during the year </p>
+            </div>
+        </div>
+
+
+
+
+        
+
+        <!-- Add more threads manually here -->
+            </div>
+</main>
+
+
+
+
+
+<!---music section--->
+    <main id="music" class="section ">
+        <h2>Music</h2>
+<div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search Music..." onkeyup="filterItems('audio-container', this.value)">
+        </div>
+
+
+
+        <div class="audio-container">
+            <h4>Song Title 1</h4>
+            <p>Artist: </p>
+        <div class="music-player">
+    <img src="pics/logo.png" alt="Song Image" class="song-image">
+    <div class="progress-container">
+      <span class="current-time">0:00</span>
+      <input type="range" class="progress-bar" value="0" min="0" max="100">
+      <span class="duration">0:00</span>
+    </div>
+    <button class="play-pause-btn">Play</button>
+    <audio class="audio" src="music/.mp3"></audio>
+  </div>               
+        </div>
+
+
+
+
+
+
+
+        <div class="audio-container">
+            <h4>Song Title 2</h4>
+            <p>Artist: </p>
+          <div class="music-player">
+    <img src="pics/logo.png" alt="Song Image" class="song-image">
+    <div class="progress-container">
+      <span class="current-time">0:00</span>
+      <input type="range" class="progress-bar" value="0" min="0" max="100">
+      <span class="duration">0:00</span>
+    </div>
+    <button class="play-pause-btn">Play</button>
+    <audio class="audio" src="music/.mp3"></audio>
+  </div>      
+         
+
+       
+                
+        </div>
+    </main>
+
+
+
+
+
+<!---video section--->
+    <main id="videos" class="section">
+        <h2>Videos</h2>
+<div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search Videos..." onkeyup="filterItems('video-container', this.value)">
+        </div>
+
+
+
+        <div class="video-container">
+            <h4>Video Title 1</h4>
+            <p>Description:no video </p>
+            <video controls>
+                <source src="Videos/.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+
+
+
+
+        <div class="video-container">
+            <h4>Video Title 2</h4>
+            <p>Description: no video</p>
+            <video controls>
+                <source src="Videos/.mp4 " type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+
+    </main>
+
+
+
+
+<!---Profile Section--->
+    <main id="profiles" class="section">
+        <h2>Profiles</h2>
+<div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search Profiles..." onkeyup="filterItems('profile-link', this.value)">
+        </div>
+   
+            
+
+  <a href="white.html" class="profile-link">
+                <img src="profile2.jpg" alt="silver">
+                <div style="margin-left: 15px;">
+                    <p class="profile-name">white Profile</p>
+                    <p class="profile-name" style="font-size: 0.9rem;">Genre: 3</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+
+
+
+<!---About Section--->
+    <main id="about" class="section">
+        <h2>About Us</h2>
+        <p style="color:white;font-size:15px;">
+Upcoming Studios is a page dedicated to bring upcoming artists together and helping them growing and share it with others.</p>
+<p style="color:white;font-size:15px;">
+Nb: This is not a distribution platform so it is highly advised to have one even so all rights are reserved. 
+</p>
+<p style="color:white;font-size:15px;">
+Our aim is for upcoming artists to support each other and listen to others music and find ways to collaborate 
+</p>
+<p style="color:white;font-size:15px;">
+NB:Upcoming studios is not a Studio, Monetization is not Available. 
+</p>
+    </main>
+
+
+
+
+    <footer id="info">
+        &copy; 2025 Music & Video Platform. All Rights Reserved.
+    </footer>
+
+
+<script src="Bleach.js"></script>
+</body>
+</html>
